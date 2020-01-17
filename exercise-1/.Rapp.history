@@ -1,0 +1,89 @@
+?substr
+intro <- substr(lyric, 1, 13)
+lyric <- "I like to eat apples and bananas"
+intro <- substr(lyric, 1, 13)
+print(intro)
+x <- nchar(lyric)
+fruits <- substr(lyric, 15, x)
+print(fruits)
+?gsub
+fruits_e <- gsub("a", "ee", fruits)
+print(fruits_e)
+fruits_o <- gsub("a", "o", fruits)
+print(fruits_o)
+lyric_e <- paste(intro, fruits_e)
+print
+print(lyric_e)
+print(paste(intro, fruits_o))
+names <- c("Min", "Kanye", "Dwayne")
+n <- 10:49
+print(length(n))
+print(n + 1)
+m <- seq(10, 1, 1)
+m <- seq(10, 1)
+print(m)
+result <- n + 1
+print(result)
+m - n
+n - m
+length(n)
+x_range <- seq(-5, 10, 0.1)
+?sin
+sin_wave <- sin(x_range)
+cos_wave <- cos(x_range)
+wave <- (sin_wave * cos_wave) + sin_wave
+plot(wave)
+first_ten <- 10:20
+next_ten <- seq(21, 30)
+all_numbers <- first_ten + next_ten
+all_numbers <- next_ten + first_ten
+all_numbers <- cat(first_ten, next_ten)
+eleventh <- all_numbers[11]
+some_numbers <- all_numbers[2:5]
+print(eleventh)
+all_numbers <- paste(first_ten, next_ten)
+eleventh <- all_numbers[11]
+print(eleventh)
+all_numbers <- paste(first_ten, next_ten, sep = " ")
+print(eleventh)
+print(all_numbers)
+all_numbers <- append(first_ten, next_ten)
+print(all_numbers)
+eleventh <- all_numbers[11]
+print(eleventh)
+some_numbers <- all_numbers[2:5]
+print(some_numbers)
+even <- seq(2, 100, 2)
+print(even)
+all(even)%%
+?%%
+all(even%%2)
+all(even %% 2)
+all(even %% 0)
+even <- seq(0, 100, 2)
+all(even %% 0)
+all(even %% 2 == 0)
+phone_numbers <- c(8, 6, 7, 5, 3, 0, 9)
+prefix <- phone_numbers[1:3]
+print(prefix)
+small_or_eq <- phone_numbers <= 5
+small <- phone_numbers[small_or_eq]
+print(small)
+large <- phone_numbers > 5
+greater <- phone_numbers > 5
+large <- phone_numbers[greater]
+print(large)
+phone_numbers[phone_numbers > 5] <- 5
+large <- phone_numbers[phone_numbers > 5]
+print(large)
+print(large)
+greater <- phone_numbers > 5
+large <- phone_numbers[greater]
+# Replace the values in `phone_numbers` that are larger than 5 with the number 5
+phone_numbers[phone_numbers > 5] <- 5
+print(phone_numbers[phone_numbers > 5] <- 5)
+phone_numbers[phone_numbers > 5] <- 5
+print(phone_numbers)
+phone_numbers[phone_numbers %% 2 == 1] <- 0
+print(phone_numbers)
+phone_numbers[phone_numbers %% 2 == 1] <- 0
